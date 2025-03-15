@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madam.com - For Sale</title>
+    <title>Madam.com - Premium Domain for Sale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -15,9 +16,10 @@
         body {
             line-height: 1.6;
             color: #333;
+            overflow-x: hidden;
         }
 
-        /* Hero Section */
+        /* Original Hero Section */
         .hero {
             background: linear-gradient(135deg, #FF5E78, #fff);
             height: 100vh;
@@ -32,6 +34,8 @@
         .hero h1 {
             font-size: 48px;
             margin-bottom: 10px;
+            font-weight: 500; /* 修改了 font-weight，使其更细 */
+            letter-spacing: -2px; /* 缩小字母之间的间距 */
         }
 
         .hero p {
@@ -39,21 +43,7 @@
             margin-bottom: 20px;
         }
 
-        .btn {
-            background: #FF5E78;
-            color: #fff;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-size: 18px;
-            transition: transform 0.2s;
-        }
-
-        .btn:hover {
-            transform: scale(1.05);
-        }
-
-        /* Benefits Section */
+        /* Original Benefits Section */
         .benefits {
             padding: 60px 20px;
             background: #F9F9F9;
@@ -82,48 +72,83 @@
             margin: 10px 0;
         }
 
-        /* Use Cases Section */
+        /* Your Enhanced Use Cases Section */
         .use-cases {
-            padding: 60px 20px;
+            padding: 6rem 2rem;
             text-align: center;
+            background: #fff;
         }
 
         .use-cases h2 {
-            font-size: 36px;
-            margin-bottom: 40px;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2D2D2D;
         }
 
         .use-list {
             max-width: 800px;
             margin: 0 auto;
             text-align: left;
+            list-style: none;
         }
 
         .use-list li {
-            font-size: 18px;
-            margin: 15px 0;
+            font-size: 1.1rem;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            background: #FFF5F7;
+            border-radius: 15px;
+            position: relative;
+            padding-left: 4rem;
+            transition: all 0.3s ease;
         }
 
-        /* CTA Section */
+        .use-list li::before {
+            content: '➤';
+            position: absolute;
+            left: 1.5rem;
+            color: #FF5E78;
+            font-weight: 700;
+        }
+
+        .use-list li:hover {
+            transform: translateX(10px);
+            background: #FFEFF2;
+        }
+
+        /* Enhanced CTA Section */
         .cta {
-            background: #FF5E78;
-            color: #fff;
-            padding: 60px 20px;
+            background: linear-gradient(135deg, #FF5E78 0%, #FF8A9B 100%);
+            color: white;
+            padding: 6rem 2rem;
             text-align: center;
+            position: relative;
         }
 
         .cta h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        /* Footer */
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
+        .btn {
+            background: #FF5E78; /* 设置默认背景色与 hover 颜色一致 */
+            color: white; /* 修改默认文字颜色为白色，与 hover 时的颜色一致 */
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255,94,120,0.3);
+            border: 2px solid transparent;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255,94,120,0.4);
+            background: #FF5E78;
+            color: white;
+            border-color: white;
         }
 
         @media (max-width: 768px) {
@@ -138,18 +163,25 @@
             .benefits h2, .use-cases h2, .cta h2 {
                 font-size: 28px;
             }
+
+            .use-list li {
+                padding: 1rem;
+                padding-left: 3rem;
+            }
+
+            .use-list li::before {
+                left: 1rem;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
     <section class="hero">
-        <h1>Own Madam.com</h1>
+        <h1>Madam.com</h1>
         <p>A Premium Domain for Bold Brands</p>
         <a href="mailto:support@madam.com" class="btn">Make an Offer</a>
     </section>
 
-    <!-- Benefits Section -->
     <section class="benefits">
         <h2>Why Madam.com?</h2>
         <div class="benefits-grid">
@@ -172,26 +204,19 @@
         </div>
     </section>
 
-    <!-- Use Cases Section -->
     <section class="use-cases">
-        <h2>Who Can Use Madam.com?</h2>
+        <h2>Perfect For:</h2>
         <ul class="use-list">
-            <li>A luxury fashion boutique showcasing elegance and style.</li>
-            <li>A women’s empowerment blog or community platform.</li>
-            <li>A high-end beauty brand with a sophisticated edge.</li>
-            <li>A consultancy firm targeting female entrepreneurs.</li>
+            <li>Luxury fashion house targeting sophisticated clients</li>
+            <li>Women's empowerment network building authority</li>
+            <li>High-end beauty brand launching globally</li>
+            <li>Premium lifestyle magazine or blog</li>
         </ul>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta">
-        <h2>Don’t Miss Out. Secure Madam.com Today.</h2>
-        <a href="mailto:support@madam.com" class="btn">Submit Your Offer</a>
+        <h2>Claim Your Digital Legacy</h2>
+        <a href="mailto:support@madam.com" class="btn">Secure Madam.com Today</a>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>Madam.com is for sale exclusively. Contact: <a href="mailto:support@madam.com" style="color: #FF5E78;">support@madam.com</a></p>
-    </footer>
 </body>
 </html>
